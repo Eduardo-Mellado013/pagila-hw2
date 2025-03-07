@@ -1,6 +1,6 @@
 # pagila-hw2
 
-[workflow sta    tus badge](https://docs.github.com/en/actions/monitoring-and-troubleshooting-workflows/adding-a-workflow-status-badge)
+[workflow status badge](https://docs.github.com/en/actions/monitoring-and-troubleshooting-workflows/adding-a-workflow-status-badge)
 
 This is the second SQL homework in CMC's CSCI143: Big Data class.
 
