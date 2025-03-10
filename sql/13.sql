@@ -9,11 +9,4 @@
  * and contains a query that almost solves this problem.
  */
 
-SELECT
-  EXTRACT(YEAR FROM rental_date) AS "Year",
-  EXTRACT(MONTH FROM rental_date) AS "Month",
-  COUNT(rental_id) AS "Total Rentals"
-FROM rental
-GROUP BY 
-    ROLLUP ("Year", "Month")
-ORDER BY "Year";
+SELECT EXTRACT(YEAR FROM rental_date) AS "Year", EXTRACT(MONTH FROM rental_date) AS "Month", COUNT(rental_id) AS "Total Rentals" FROM rental GROUP BY ROLLUP ("Year", "Month") ORDER BY "Year";
