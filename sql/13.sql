@@ -10,10 +10,10 @@
  */
 
 SELECT 
-  EXTRACT(YEAR FROM rental_date) AS "Year",
-  EXTRACT(MONTH FROM rental_date) AS "Month",
+  EXTRACT(YEAR FROM rental_date) AS "Year", 
+  EXTRACT(MONTH FROM rental_date) AS "Month", 
   COUNT(rental_id) AS "Total Rentals"
 FROM rental
 GROUP BY ROLLUP (EXTRACT(YEAR FROM rental_date), EXTRACT(MONTH FROM rental_date))
-ORDER BY "Year";
+ORDER BY 1, 2;
 
