@@ -14,4 +14,4 @@ FROM rental
 join payment USING (rental_id)
 GROUP BY 
     ROLLUP ("Year", "Month")
-ORDER BY "Year";
+ORDER BY 1,2;
